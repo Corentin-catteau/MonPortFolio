@@ -129,7 +129,7 @@ h2{
 }
 
 @media (max-width: 768px) {
-  .presentation > div {
+  .Presentation > div {
     flex-direction: column;
   }
 }
@@ -179,10 +179,6 @@ h2{
   margin: 50px;
 }
 
-.space-between{
-  justify-content: space-between;
-}
-
 .icon{
   display: block;
   font-size: 50px !important;
@@ -201,3 +197,13 @@ h2{
   font-size: 1.2rem;
 }
 
+.Certification img{
+  justify-content: center;
+  width: 250px;
+  height: var(--max-height, auto);
+  object-fit: cover;
+}
+
+.container:has(img) {
+  --max-height: 250px;
+}
