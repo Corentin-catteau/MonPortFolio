@@ -52,6 +52,10 @@ h2{
   margin: 5px;
 }
 
+.Nav{
+  margin-bottom: 5%;
+}
+
 .nav ul{
   list-style: none;
 }
@@ -78,11 +82,6 @@ h2{
   color: #fffae7;
   font-size: larger;
   border-bottom: 2px solid #fffae7;
-}
-
-.logo{
-  width: 60px;
-  height: 60px;
 }
 
 .Presentation {
@@ -163,6 +162,15 @@ h2{
   box-sizing: border-box;
 }
 
+Experience img{
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+
+
 .contact{
   width: 25%;
   border: 2px dashed #fffae7;
@@ -199,7 +207,8 @@ h2{
 }
 
 .contact img{
-
+  width: 60px;
+  height: 60px;
 }
 
 .Certification img{
