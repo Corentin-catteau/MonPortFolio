@@ -137,7 +137,8 @@ h2{
 }
 
 .skill{
-  background: #242424;
+  background: #fffae7;
+  color: #292929;
   border-radius: 15px;
   padding: 20px;
   box-sizing: border-box;
@@ -156,7 +157,8 @@ h2{
 
 .box{
   text-align: center;
-  background: #333;
+  background: #fffae7;
+  color: #292929;
   border-radius: 15px;
   padding: 20px;
   box-sizing: border-box;
@@ -220,4 +222,11 @@ Experience img{
 
 .container:has(img) {
   --max-height: 250px;
+}
+
+.Projets img{
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 15px;
 }
