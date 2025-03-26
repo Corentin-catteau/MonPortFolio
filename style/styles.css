@@ -137,8 +137,7 @@ h2{
 }
 
 .skill{
-  background: #fffae7;
-  color: #292929;
+  background: #2c2d34;
   border-radius: 15px;
   padding: 20px;
   box-sizing: border-box;
@@ -157,8 +156,7 @@ h2{
 
 .box{
   text-align: center;
-  background: #fffae7;
-  color: #292929;
+  background: #2c2d34;
   border-radius: 15px;
   padding: 20px;
   box-sizing: border-box;
@@ -181,8 +179,8 @@ Experience img{
 }
 
 .gap{
-  gap: 50px;
-  margin: 50px;
+  gap: 100px;
+  margin: 100px;
 }
 
 .gap20{
