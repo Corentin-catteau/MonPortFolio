@@ -169,10 +169,8 @@ Experience img{
   object-fit: cover;
 }
 
-
-
 .contact{
-  width: 25%;
+  width: 35%;
   border: 2px dashed #fffae7;
   border-radius: 15px;
   padding: 15px;
@@ -213,7 +211,7 @@ Experience img{
 
 .Certification img{
   justify-content: center;
-  width: 250px;
+  width: 200px;
   height: var(--max-height, auto);
   object-fit: cover;
 }
@@ -222,9 +220,29 @@ Experience img{
   --max-height: 250px;
 }
 
-.Projets img{
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
-  border-radius: 15px;
+.logo-eiffage{
+  width: 35%;
+  height: 125px;
+  justify-content: center;
+}
+
+.logo-malraux{
+  width: 25%;
+  height: 25%;
+  justify-content: center;
+}
+
+.logo-gsb{
+  width: 200px;
+  height: 150px;
+  justify-content: center;
+  padding: 1em;
+}
+
+.logo-share{
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  padding: 1em;
+
 }
