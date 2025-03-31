@@ -102,47 +102,53 @@
         <div class="boxed">
             <h2 id="experience" class="experience">Mes Expériences</h2>
             <div class="box gap">
-                <img src="asset/images/experience/eiffage.png" alt="Logo Eiffage" class="logo-eiffage"/>
-                <h2>Eiffage Energie Systèmes</h2>
-                <div class="">
-                    <p>
-                        Du 6 janvier 2025 au 22 février 2025
-                    </p>
-                    <p>
-                        Stage de 6 semaines au sein de Eiffage Energie Systèmes <br>
-                        Continuation de l'application et développement de la partie analyse des factures <br>
-                        Ajout de fonctionnalités pour la gestion des factures notamment avec la comparaison entre la gestion et la fecture reçu
-                    </p>
-                </div>
-                
-            </div>
-            <div class="box gap">
-                <img src="asset/images/experience/eiffage.png" alt="Logo Eiffage" class="logo-eiffage"/>
-                <h2>Eiffage Energie Systèmes</h2>
-                <div class="">
-                    <p>
-                        Du 20 mai 2024 au 28 juin 2024
-                    </p>
-                    <p>
-                        Stage de 6 semaines au sein de Eiffage Energie Systèmes <br>
-                        Production d'une application en dure de gestion des factures <br>
-                        Utilisation de l'outil C Sharp et de SQL Serveur pour le développement de l'application <br>
-                    </p>
-                </div>
-            </div>
-            <div class="box gap">
                 <img src="asset/images/experience/lycee_AndreMalraux.png" alt="Logo Lycée" class="logo-malraux"/>
                 <h2>Lycée André Malraux</h2>
-                <button class="VoirPlus" onclick="ouvrirPlus('modal1')">Voir plus</button>
-                <div class="modal1">
-                    <span class="close" onclick="fermerPlus('modal1')"></span>
-                    <p>
-                        Projet de fin d'année <br>
-                        Création d'un site web pour une entreprise fictive, GSB, un espace utilisateur pour développer les droits de l'utilisateur 
-                        et un espace admin pour la gestion des médicaments
-                    </p>
+                <p>Projet de fin d'année.</p>
+                <button class="voirPlus" onclick="ouvrirPlus('modal3')">Voir plus</button>
+                <div id="modal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="fermerPlus('modal3')">&times;</span>
+                        <p>
+                            Création d'un site web pour une entreprise fictive, GSB, <br>
+                            un espace utilisateur pour développer les droits de l'utilisateur <br>
+                            et un espace admin pour la gestion des médicaments <br>
+                        </p>
+                    </div>
                 </div>
-                
+            </div>
+            
+            <div class="box gap">
+                <img src="asset/images/experience/eiffage.png" alt="Logo Eiffage" class="logo-eiffage"/>
+                <h2>Eiffage Energie Systèmes</h2>
+                <p>Du 20 mai 2024 au 28 juin 2024.</p>
+                <button class="voirPlus" onclick="ouvrirPlus('modal2')">Voir plus</button>
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="fermerPlus('modal2')">&times;</span>
+                        <p>
+                            Stage de 6 semaines au sein de Eiffage Energie Systèmes <br>
+                            Production d'une application en dure de gestion des factures <br>
+                            Utilisation de l'outil C Sharp et de SQL Serveur pour le développement de l'application <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box gap">
+                <img src="asset/images/experience/eiffage.png" alt="Logo Eiffage" class="logo-eiffage"/>
+                <h2>Eiffage Energie Systèmes</h2>
+                <p>Du 6 janvier 2025 au 22 février 2025.</p>
+                <button class="voirPlus" onclick="ouvrirPlus('modal1')">Voir plus</button>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="fermerPlus('modal1')">&times;</span>
+                        <p>
+                            Continuation de l'application et développement de la partie analyse des factures <br>
+                            Ajout de fonctionnalités pour la gestion des factures notamment avec la comparaison entre la gestion et la fecture reçu
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -154,6 +160,7 @@
                 <div class="box">
                     <div>
                         <a href="view/gsb.html"><img src="asset/images/projet/gsb.png" alt="GSB" class="logo-gsb"/></a>
+                        <button class="voirPlus" onclick="voirPlus('modal4')">Voir Plus</button>
                     </div>
                 </div>
                 <div class="box">
@@ -215,7 +222,7 @@
         </div>
     </section>
 </body>
-<footer>
+<footer class="footer">
     <p>
         ©Corentin Catteau - 2021 | 
         <a href="view/mentionLegal.html">Mentions Légales</a> |
