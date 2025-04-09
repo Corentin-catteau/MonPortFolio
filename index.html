@@ -33,9 +33,9 @@
             </div>
             <div class="flotte2">
                 <p>
-                    Je m'appelle Corentin Catteau, j'ai 19 ans et je suis actuellement étudiant en BTS Services Informatiques et aux Organisations.<br>
-                    Je suis passionné par le développement web et applicative. <br>
-                    Vous trouverez sur ce site mes compétences, mes certifications et mes projets.
+                    Je m'appelle Corentin Catteau, j'ai 19 ans et je suis actuellement étudiant en BTS Services Informatiques et aux Organisations (SIO).<br>
+                    Je suis passionné par le développement web et applicative. Mais aussi par les jeux-vidéos et le sport.  <br>
+                    Vous trouverez sur ce site mon Curriculum Vitae, mes compétences, mes certifications et mes projets réalisés et enfin des moyens de me contacter .
                 </p>
             </div>
         </div>
@@ -156,22 +156,97 @@
     <section class="section Project">
         <div class="boxed">
             <h2 id="projet" class="projets">Mes Projets</h2>
-            <div class="flex gap">
+            <div class="flex gap20">
                 <div class="box">
                     <div>
-                        <a href="view/gsb.html"><img src="asset/images/projet/gsb.png" alt="GSB" class="logo-gsb"/></a>
-                        <button class="voirPlus" onclick="voirPlus('modal4')">Voir Plus</button>
+                        <img src="asset/images/projet/pf.png" alt="Portefolio" class="logo-pf" />
+                        <button class="voirPlus" onclick="ouvrirPlus('modal4')">Voir Plus</button>
+                    </div>
+                    <div id="modal4" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="fermerPlus('modal4')">&times;</span>
+                            <p>
+                                Le Portfolio permet une visibilité sur mes compétences et mes expériences passé. <br>
+                                Deplus le portfolio est necéssaire pour passer mon epreuve.
+                            </p>
+                            <p>
+                                Technoologies utilisées : <br>
+                                HTML 5 pour la structure du site <br>
+                                CSS 3 pour le style <br>
+                                javascript pour les interactions
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="box">
-                    <a href="view/share.html"><img src="asset/images/projet/share.png" alt="Share" class="logo-share"/></a>
-                </div>
-                <div class="box">
 
-                </div>
                 <div class="box">
-
+                    <div>
+                        <img src="asset/images/projet/gsb.png" alt="GSB" class="logo-gsb"/>
+                        <button class="voirPlus" onclick="ouvrirPlus('modal5')">Voir Plus</button>
+                    </div>
+                    <div id="modal5" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="fermerPlus('modal5')">&times;</span>
+                            <p>
+                                Le projet GSB est un projet réalisé pendant les heures de classes avec l'outil php. <br>
+                                La première partie est composé d'un site avec la gestion de médicament, principalement pour apprendre à développer les droits de l'utilisateur 
+                                comme le droit à la portabilité, le droit à l'oubli, le droit à la rectification. <br>
+                                La seconde partie est composé de la partie admin de ce site, où l'on retrouve un gestion des médicaments avec un CRUD(Create, Read, Update, Delete), 
+                                avec un gestion de la maintenance du site principale et un système d'historisation des changements apportés, que ce soit un ajout, une modification ou une suppression.<br>
+                                Enfin on retrouve une page pour les statistiques des changements opérés sur le site au cours des 7 derniers jours.
+                            </p>
+                            <p>
+                                Technoologies utilisées : <br>
+                                PHP pour la structure du site et l'utilisation de la base de donnée. <br>
+                                MySQL pour la base de donnée.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="box">
+                    <img src="asset/images/projet/share.png" alt="Share" class="logo-share"/>
+                    <button class="voirPlus" onclick="ouvrirPlus('modal6')">Voir Plus</button>
+                </div>
+                <div id="modal6" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="fermerPlus('modal6')">&times;</span>
+                        <p>
+                            Le projet Share est un projet réalisé pendant les heures de classes avec le framework Symfony et d'un SGBD MySql<br>
+                            Il est composé d'une gestion de fichiers, un CRUD (Create, Read, Update, Delete) de fichiers.<br>
+                            Avec une gestion de catégorie et sous catégorie pour classer les fichiers.<br>
+                            Il y a aussi un système d'authfication et de gestion des utilisateurs avec un système de rôles et une session Administrateur.<br>
+                        </p>
+                        <p>
+                            Technoologies utilisées : <br>
+                            Utilisation du framework Symfony <br>
+                            MySQL pour la base de donnée.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="asset\images\projet\gestionfac.png" alt="Gestion Facture" class="logo-gestionfac" />
+                    <button class="voirPlus" onclick="ouvrirPlus('modal7')">Voir Plus</button>
+                </div>
+                <div id="modal7" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="fermerPlus('modal7')">&times;</span>
+                        <p>
+                            Le projet à pour but de pouvoir stocker les factures données par la DSI qui donne le prix total à payer tous les mois <br>
+                            Mais aussi de pouvoir tenir sa propre gestion des factures et ainsi pouvoir informé la 
+                            DSI de toutes erreurs dans les factures et ne pas payer dans le vide <br>
+                            De plus, il y a des fonctions de comparaison entre les factures incorporées et la tenue de facture. <br>
+                            Dans cette application, en dure, est incorporé totalement avec une base de donnée SQL. <br>
+                        </p>
+                        <p>
+                            Technoologies utilisées : <br>
+                            Application en dure C# <br>
+                            SQL pour la base de donnée.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
