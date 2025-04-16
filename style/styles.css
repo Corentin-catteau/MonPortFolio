@@ -245,6 +245,7 @@ position: relative;
 }
 
 .voirPlus {
+  display: inline-block;
   background-color: #fffae7;
   color: #2c2d34;
   border: none;
@@ -311,6 +312,24 @@ position: relative;
   justify-content: center;
   padding: 1em;
 }
+
+.btn-style {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fffae7;
+  color: #2c2d34;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-style:active {
+  transform: scale(0.98);
+}
+
 
 .footer{
   background: #2c2d34;
