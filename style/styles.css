@@ -156,10 +156,22 @@ h2{
 .box{
   text-align: center;
   background: #2c2d34;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  padding: 30px;
   border-radius: 15px;
-  padding: 20px;
   box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.Project .wrapped{
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
 
 .contact{
   width: 35%;
@@ -202,10 +214,34 @@ h2{
 }
 
 .Certification img{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.Certification .wrapped {
+  height: 250px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  width: 200px;
-  height: var(--max-height, auto);
-  object-fit: cover;
+  overflow: hidden;
+}
+
+.wrapped img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.Certification .item{
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.Certification h3{
+  margin-top: 10px;
 }
 
 .container:has(img) {
@@ -330,6 +366,10 @@ position: relative;
   transform: scale(0.98);
 }
 
+.custom-list{
+  font-size: 1.5rem;
+  text-align: left;
+}
 
 .footer{
   background: #2c2d34;

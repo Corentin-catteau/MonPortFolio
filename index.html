@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-    <link rel="website icon" type="png" href="asset/images/logo.png"/>
+    <link rel="icon" type="image/png" href="asset/logo/logo.png" />
     <link href="style/styles.css" rel="stylesheet"/>
     <title>Portfolio</title>
 </head>
@@ -132,9 +132,6 @@
                             Production d'une application en dure de gestion des factures <br>
                             Utilisation de l'outil C Sharp et de SQL Serveur pour le développement de l'application <br>
                         </p>
-                        <a  href="asset/pdf/Tableau-de-synthese-CATTEAU-Corentin.pdf">
-                            <button class="btn-style">Tableau de synthèse</button>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -151,9 +148,6 @@
                             Continuation de l'application et développement de la partie analyse des factures <br>
                             Ajout de fonctionnalités pour la gestion des factures notamment avec la comparaison entre la gestion et la fecture reçu
                         </p>
-                        <a  href="asset/pdf/Tableau-de-synthese-CATTEAU-Corentin.pdf">
-                            <button class="btn-style">Tableau de synthèse</button>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -166,7 +160,9 @@
             <div class="flex gap20">
                 <div class="box">
                     <div>
-                        <img src="asset/images/projet/pf.png" alt="Portefolio" class="logo-pf" />
+                        <div class="wrapped">
+                            <img src="asset/images/projet/pf.png" alt="Portefolio" class="logo-pf" />
+                        </div>
                         <button class="voirPlus" onclick="ouvrirPlus('modal4')">Voir Plus</button>
                     </div>
                     <div id="modal4" class="modal">
@@ -177,7 +173,7 @@
                                 Deplus le portfolio est necéssaire pour passer mon epreuve.
                             </p>
                             <p>
-                                Technoologies utilisées : <br>
+                                <u>Technoologies utilisées :</u><br>
                                 HTML 5 pour la structure du site <br>
                                 CSS 3 pour le style <br>
                                 javascript pour les interactions
@@ -188,7 +184,9 @@
 
                 <div class="box">
                     <div>
-                        <img src="asset/images/projet/gsb.png" alt="GSB" class="logo-gsb"/>
+                        <div class="wrapped">
+                            <img src="asset/images/projet/gsb.png" alt="GSB" class="logo-gsb"/>
+                        </div>
                         <button class="voirPlus" onclick="ouvrirPlus('modal5')">Voir Plus</button>
                     </div>
                     <div id="modal5" class="modal">
@@ -203,7 +201,7 @@
                                 Enfin on retrouve une page pour les statistiques des changements opérés sur le site au cours des 7 derniers jours.
                             </p>
                             <p>
-                                Technoologies utilisées : <br>
+                                <u>Technoologies utilisées :</u><br>
                                 PHP pour la structure du site et l'utilisation de la base de donnée. <br>
                                 MySQL pour la base de donnée.
                             </p>
@@ -212,8 +210,12 @@
                 </div>
 
                 <div class="box">
-                    <img src="asset/images/projet/share.png" alt="Share" class="logo-share"/>
-                    <button class="voirPlus" onclick="ouvrirPlus('modal6')">Voir Plus</button>
+                    <div>
+                        <div class="wrapped">
+                            <img src="asset/images/projet/share.png" alt="Share" class="logo-share"/>
+                        </div>
+                        <button class="voirPlus" onclick="ouvrirPlus('modal6')">Voir Plus</button>
+                    </div>
                 </div>
                 <div id="modal6" class="modal">
                     <div class="modal-content">
@@ -225,7 +227,7 @@
                             Il y a aussi un système d'authfication et de gestion des utilisateurs avec un système de rôles et une session Administrateur.<br>
                         </p>
                         <p>
-                            Technoologies utilisées : <br>
+                            <u>Technoologies utilisées :</u><br>
                             Utilisation du framework Symfony <br>
                             MySQL pour la base de donnée.
                         </p>
@@ -233,8 +235,12 @@
                 </div>
 
                 <div class="box">
-                    <img src="asset\images\projet\gestionfac.png" alt="Gestion Facture" class="logo-gestionfac" />
-                    <button class="voirPlus" onclick="ouvrirPlus('modal7')">Voir Plus</button>
+                    <div>
+                        <div class="wrapped">
+                            <img src="asset\images\projet\gestionfac.png" alt="Gestion Facture" class="logo-gestionfac" />
+                        </div>
+                        <button class="voirPlus" onclick="ouvrirPlus('modal7')">Voir Plus</button>
+                    </div>
                 </div>
                 <div id="modal7" class="modal">
                     <div class="modal-content">
@@ -247,10 +253,13 @@
                             Dans cette application, en dure, est incorporé totalement avec une base de donnée SQL. <br>
                         </p>
                         <p>
-                            Technoologies utilisées : <br>
+                            <u>Technoologies utilisées :</u><br>
                             Application en dure C# <br>
                             SQL pour la base de donnée.
                         </p>
+                        <a  href="asset/pdf/Tableau-de-synthese-CATTEAU-Corentin.pdf">
+                            <button class="btn-style">Tableau de synthèse</button>
+                        </a>
                     </div>
                 </div>
 
@@ -263,14 +272,22 @@
             <h2 id="certification" class="certification">Mes Certifications</h2>
             <div class="flex gap">
                 <div class="box">
-                    <a href="asset/pdf/SecNum_Certification.pdf">
-                        <img src="asset/images/certification/secnum.png" alt="SecNum" />
-                    </a> 
-                    <h3>SecNum Académie</h3>
+                    <div class="item">
+                        <div class="wrapped">
+                            <a href="asset/pdf/SecNum_Certification.pdf">
+                                <img src="asset/images/certification/secnum.png" alt="SecNum" />
+                            </a>
+                        </div>
+                        <h3>SecNum Académie</h3>
+                    </div>
                 </div>
                 <div class="box">
-                    <img src="asset/images/certification/w3school.png" alt="W3 School" />
-                    <h3>W3 School</h3>
+                    <div class="item">
+                        <div class="wrapped">
+                            <img src="asset/images/certification/w3school.png" alt="W3 School" />
+                        </div>
+                        <h3>W3 School</h3>
+                    </div>
                 </div>
                 
             </div>
@@ -281,20 +298,19 @@
         <div class="boxed">
             <h2 id="veille" class="veille">Ma veille informatique</h2>
             <div class="flex gap">
-                <div>
-                    <h3>Outils utilisés :</h3>
-                    <p>
-                        Feedly RSS
-
-                    </p>
+                <div class="box">
+                    <h3><u>Outils utilisés :</u></h3>
+                    <ul class="custom-list">
+                        <li>Feedly RSS</li>
+                        <li>Notion</li>
+                    </ul>
                 </div>
-                <div>
-                    <h3>Sujet de la veille : </h3>
-                    <p>
-                        - Nouvelle Technologie <br>
-                        - Intelligence Artificiel <br>
-                        - 
-                    </p>
+                <div class="box">
+                    <h3><u>Sujet de la veille :</u></h3>
+                    <ul class="custom-list">
+                        <li>Nouvelle Technologie</li>
+                        <li>Intelligence Artificiel</li>
+                    </ul>
                 </div>
             </div>
         </div>
