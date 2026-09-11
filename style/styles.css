@@ -36,6 +36,7 @@ h2{
 
 .boxed{
   max-width: 1280px;
+  width: 100%;
   margin-inline: auto;
 }
 
@@ -128,6 +129,147 @@ h2{
   }
 }
 
+.timeline {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 40px auto 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: #fffae7;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item.left {
+  left: 0;
+  padding-right: 25px;
+}
+
+.timeline-item.right {
+  left: 50%;
+  padding-left: 25px;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 25px;
+  width: 16px;
+  height: 16px;
+  background-color: #292721;
+  border: 4px solid #fffae7;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-item.left .timeline-dot {
+  right: -12px;
+}
+
+.timeline-item.right .timeline-dot {
+  left: -12px;
+}
+
+.timeline-content.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 15px;
+  margin: 0; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.timeline-content.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-date {
+  display: inline-block;
+  background-color: #fffae7;
+  color: #2c2d34;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 4px 14px;
+  border-radius: 20px;
+}
+
+.timeline-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.timeline-content.skill .timeline-body img {
+  width: 120px;
+  height: 90px;
+  object-fit: contain;
+  flex-shrink: 0; 
+  background: #fff;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.timeline-text {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.timeline-text h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+  color: #fffae7;
+  line-height: 1.3;
+}
+
+.timeline-text p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #fffae7;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.timeline-text .subtitle {
+  font-size: 0.85rem;
+  margin-top: 4px;
+  opacity: 0.75;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .timeline-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .competence {
   font-size: 1.8em;
   font-weight: bold;
@@ -170,8 +312,6 @@ h2{
   justify-content: center;
   overflow: hidden;
 }
-
-
 
 .contact{
   width: 35%;
@@ -377,3 +517,4 @@ position: relative;
   justify-content: center;
   padding: 0.5rem;
 }
+
