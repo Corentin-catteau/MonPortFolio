@@ -161,11 +161,6 @@
                     <h3>C</h3>
                     <p class="stars">★★★☆☆</p>
                 </div>
-                <!--
-                <div class="skill">
-                    <img src="asset/images/competences/"
-                </div>
-                -->
             </div>             
         </div>
     </section>
@@ -174,7 +169,7 @@
         <div class="boxed">
             <h2 id="experience" class="experience">Mes Expériences</h2>
             <div class="box gap">
-                <img src="asset/images/experience/lycee_AndreMalraux.png" alt="Logo Lycée" class="logo-malraux"/>
+                <img src="asset/images/experience/lycee_AndreMalraux.png" alt="Logo Lycée" class="logo-e"/>
                 <h2>Lycée André Malraux</h2>
                 <p>Projet de fin d'année.</p>
                 <button class="voirPlus" onclick="ouvrirPlus('modal3')">Voir plus</button>
@@ -191,7 +186,7 @@
             </div>
             
             <div class="box gap">
-                <img src="asset/images/experience/eiffage.png" alt="Logo Eiffage" class="logo-eiffage"/>
+                <img src="asset/images/experience/eiffage.png" alt="Logo Eiffage" class="logo-e"/>
                 <h2>Eiffage Energie Systèmes</h2>
                 <p>Du 20 mai 2024 au 28 juin 2024.</p>
                 <button class="voirPlus" onclick="ouvrirPlus('modal2')">Voir plus</button>
@@ -208,7 +203,7 @@
             </div>
 
             <div class="box gap">
-                <img src="asset/images/experience/eiffage.png" alt="Logo Eiffage" class="logo-eiffage"/>
+                <img src="asset/images/experience/eiffage.png" alt="Logo Eiffage" class="logo-e"/>
                 <h2>Eiffage Energie Systèmes</h2>
                 <p>Du 6 janvier 2025 au 22 février 2025.</p>
                 <button class="voirPlus" onclick="ouvrirPlus('modal1')">Voir plus</button>
@@ -232,7 +227,7 @@
                 <div class="box">
                     <div>
                         <div class="wrapped">
-                            <img src="asset/images/projet/pf.png" alt="Portefolio" class="logo-pf" />
+                            <img src="asset/images/projet/pf.png" alt="Portefolio" class="logo-e" />
                         </div>
                         <button class="voirPlus" onclick="ouvrirPlus('modal4')">Voir Plus</button>
                     </div>
@@ -253,10 +248,11 @@
                     </div>
                 </div>
 
+
                 <div class="box">
                     <div>
                         <div class="wrapped">
-                            <img src="asset/images/projet/gsb.png" alt="GSB" class="logo-gsb"/>
+                            <img src="asset/images/projet/jeux_de_la_vie.png" alt="Jeux de la vie" class="logo-e"/>
                         </div>
                         <button class="voirPlus" onclick="ouvrirPlus('modal5')">Voir Plus</button>
                     </div>
@@ -264,19 +260,16 @@
                         <div class="modal-content">
                             <span class="close" onclick="fermerPlus('modal5')">&times;</span>
                             <p>
-                                Le projet GSB est un projet réalisé pendant les heures de classe avec l'outil php. <br>
-                                
-                                La première partie est composée d'un site avec la gestion de médicament, <br>
-                                principalement pour apprendre à développer les droits de l'utilisateur comme le droit à la portabilité, le droit à l'oubli, le droit à la rectification. <br>
-                                
-                                La seconde partie est composé de la partie administrateur de ce site, où l'on retrouve une gestion des médicaments avec un CRUD(Create, Read, Update, Delete), 
-                                avec une gestion de la maintenance du site principale et un système d'historisation des changements apportés, que ce soit un ajout, une modification ou une suppression.<br>
-                                Enfin on retrouve une page pour les statistiques des changements opérés sur le site au cours des 7 derniers jours.
+                                Le projet Jeux de la vie est un projet réalisé pendant les heures de classe avec le langage Python. <br>
+                                Il est composé d'une simulation du jeux de la vie de John Conway, avec une grille que l'on initialise à la taille désirée. <br>
+                                Et également avec un nombre de cellules vivantes que l'on peut choisir. <br>
+                                Ce jeu est à la fois un jeu que l'on peut uitiliser avec une console mais aussi avec une interface graphique. <br>
+                                Enfin il y a un système d'animation pour voir l'évolution de la grille au fil du temps.
                             </p>
                             <p>
                                 <u>Technologies utilisées :</u><br>
-                                PHP pour la structure du site et l'utilisation de la base de donnée. <br>
-                                MySQL pour la base de donnée.
+                                Python pour la structure du programme et des classes. <br>
+                                Tkinter pour l'interface graphique.
                             </p>
                         </div>
                     </div>
@@ -285,7 +278,7 @@
                 <div class="box">
                     <div>
                         <div class="wrapped">
-                            <img src="asset/images/projet/share.png" alt="Share" class="logo-share"/>
+                            <img src="asset/images/projet/share.png" alt="Share" class="logo-e"/>
                         </div>
                         <button class="voirPlus" onclick="ouvrirPlus('modal6')">Voir Plus</button>
                     </div>
@@ -310,7 +303,7 @@
                 <div class="box">
                     <div>
                         <div class="wrapped">
-                            <img src="asset\images\projet\gestionfac.png" alt="Gestion Facture" class="logo-gestionfac" />
+                            <img src="asset\images\projet\tron.png" alt="Jeu Tron" class="logo-e" />
                         </div>
                         <button class="voirPlus" onclick="ouvrirPlus('modal7')">Voir Plus</button>
                     </div>
@@ -318,6 +311,37 @@
                 <div id="modal7" class="modal">
                     <div class="modal-content">
                         <span class="close" onclick="fermerPlus('modal7')">&times;</span>
+                        <p>
+                            Le projet Tron est un projet réalisé pendant les heures de classe avec le langage HTML, CSS et JavaScript. <br>
+                            Il est composé d'un jeu de type Tron, où l'on peut jouer à deux joueurs sur le même clavier. <br>
+                            Le but du jeu est de ne pas toucher les murs ou la trace de l'autre joueur. <br>
+                            Le jeu est composé d'un système de score et d'un système de victoire. <br>
+                            Ce jeu à été réalisé dans le cadre d'un travail de groupe avec un autre étudiant. <br>
+                        </p>
+                        <p>
+                            <u>Technologies utilisées :</u><br>
+                            HTML 5 pour la structure du site <br>
+                            CSS 3 pour le style <br>
+                            JavaScript pour les interactions et la logique du jeu.
+                           
+                        </p>
+                        <a  href="asset/pdf/Tableau-de-synthese-CATTEAU-Corentin.pdf">
+                            <button class="btn-style">Tableau de synthèse</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div>
+                        <div class="wrapped">
+                            <img src="asset\images\projet\gestionfac.png" alt="Gestion Facture" class="logo-e" />
+                        </div>
+                        <button class="voirPlus" onclick="ouvrirPlus('modal8')">Voir Plus</button>
+                    </div>
+                </div>
+                <div id="modal8" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="fermerPlus('modal8')">&times;</span>
                         <p>
                             Le projet a pour but de pouvoir stocker les factures données par la DSI qui donne le prix total à payer tous les mois <br>
                             Mais aussi de pouvoir tenir sa propre gestion des factures et ainsi pouvoir informer la 
@@ -335,7 +359,6 @@
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
